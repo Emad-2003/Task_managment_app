@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Task Dashboard</h1>
+      <input type="text" id="search" placeholder="Search tasks...">
+    </header>
+    <main>
+    <!-- Buttons to apply Filters -->
+      <div id="task-filters">
+        <button data-filter="all">All</button>
+        <button data-filter="upcoming">Upcoming</button>
+        <button data-filter="overdue">Overdue</button>
+        <button data-filter="completed">Completed</button>
+        <button data-filter="priority-high">High Priority</button>
+        <button data-filter="priority-medium">Medium Priority</button>
+        <button data-filter="priority-low">Low Priority</button>
+      </div>
+
+      <a href="task-form.html" id="add-task">
+        <button type="button" style="background-color: rgb(65, 65, 232); color: white; padding: 7px 10px; border: none; border-radius: 7px; font-size: 14px;">Add Task</button>
+    </a>
+    <div id="task-dashboard"></div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
